@@ -1,0 +1,10 @@
+main
+object
+object.block
+object.chara
+object.chara.enemy
+object.chara.player
+object.goal
+object.item
+scene
+stage
