@@ -17,6 +17,7 @@ public class WingeyeEnemy extends Enemy{
 	 * 怯み状態か
 	 */
 	boolean wince;
+	private int count;
 	/**
 	 * @param x
 	 * @param y
@@ -56,6 +57,7 @@ public class WingeyeEnemy extends Enemy{
 	public void setUp(){
 		super.setUp();
 		winceCount=0;
+		count=0;
 		wince=false;
 		dir=Dir.LEFT;
 	}
@@ -73,12 +75,14 @@ public class WingeyeEnemy extends Enemy{
 	@Override
 	public void update() {
 		super.update();
+		count++;
 		if(!wince){
-			if(moveCount==250){
-				dir=Dir.LEFT;
-			}else if(moveCount==500){
-				moveCount=0;
-				dir=Dir.RIGHT;
+			if(count==150){
+				if(dir==Dir.RIGHT)
+					dir=Dir.LEFT;
+				else
+					dir=Dir.RIGHT;
+				count=0;
 			}
 			move(dir);
 			this.flyght();

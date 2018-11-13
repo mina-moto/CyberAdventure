@@ -14,8 +14,8 @@ public class Night implements BackGround{
 		for(int i=0;i<4;i++){
 			d.drawImage(ImageLoader.load("image/backGround/Night.jpg")
 					, (int)Stage.offsetX/10+i*Main.FW-50
-					, (int)Stage.offsetY/10
-					,Main.FW,Main.FH);
+					, (int)Stage.offsetY/10-70
+					,Main.FW*2,Main.FH*2);
 		}
 	}
 }

@@ -55,10 +55,10 @@ public class StageSelectScene implements Scene{
 		stage1List.add(new Stage1_1());
 		stage1List.add(new Stage1_2());
 		stage1List.add(new Stage1_3());
-		stage2List.add(new Stage1_1());
-		stage3List.add(new Stage1_1());
-		stage4List.add(new Stage1_1());
-		stage5List.add(new Stage1_1());
+		stage2List.add(new Stage1_2());
+		stage3List.add(new Stage1_3());
+		stage4List.add(new Stage1_3());
+		stage5List.add(new Stage1_3());
 		/*
 		 * 新しくステージを追加する場合,ここにステージ追加
 		 */
@@ -69,7 +69,7 @@ public class StageSelectScene implements Scene{
 		posList.add(new Point(470,340));//雪原
 		posList.add(new Point(580,320));//山岳
 //		posList.add(new Point(240,300));//海原
-		posList.add(new Point(60,70));//孤島
+//		posList.add(new Point(60,70));//孤島
 		alignment=new Alignment();
 		window=new StageSelectWindow();
 	}
@@ -154,11 +154,12 @@ public class StageSelectScene implements Scene{
 					window.setStageList(stage2List);
 				}else if(allowNum==2){
 					window.setStageList(stage3List);
-				}else if(allowNum==3){
-					window.setStageList(stage4List);
-				}else if(allowNum==4){
-					window.setStageList(stage5List);
 				}
+//				else if(allowNum==3){
+//					window.setStageList(stage4List);
+//				}else if(allowNum==4){
+//					window.setStageList(stage5List);
+//				}
 			}
 			if (KeyInput.isPress(KeyEvent.VK_X)){
 				SoundManager.playSE(AllSound.CLOSEWINDOW_SE);
@@ -183,6 +184,6 @@ public class StageSelectScene implements Scene{
 		d.fillRect(0,Main.FH-30, Main.FW, 30);
 		d.setColor(Color.CYAN);
 		d.setFontSize(20);
-		d.drawStringCenter("Zで決定, Xで戻る", Main.FW/2, Main.FH-17);
+		d.drawStringCenter("Z:Forward, X:Back", Main.FW/2, Main.FH-17);
 	}
 }

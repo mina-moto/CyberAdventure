@@ -40,9 +40,7 @@ public class BatEnemy extends Enemy{
 	public void flyght(){
 		flyghtCount++;
 		if(flyghtCount==100){
-			speedY=0.3;
-		}else if(flyghtCount==200){
-			speedY=-0.3;
+			speedY=-speedY;
 			flyghtCount=0;
 		}
 		if(!wince){
@@ -85,10 +83,11 @@ public class BatEnemy extends Enemy{
 		count++;
 		if(!wince){
 			if(count==200){
-				dir=Dir.RIGHT;
-			}else if(count==400){
+				if(dir==Dir.RIGHT)
+					dir=Dir.LEFT;
+				else
+					dir=Dir.RIGHT;
 				count=0;
-				dir=Dir.LEFT;
 			}
 			move(dir);
 			this.flyght();

@@ -204,7 +204,7 @@ public abstract class Stage {
 		}
 		if(clear){
 			clearCount++;
-			if(clearCount>100){
+			if(clearCount>10){
 				GameScene.gameClear();
 			}
 		}
@@ -233,5 +233,6 @@ public abstract class Stage {
 		for(ActionGameObject object:objects)
 			object.draw(d);
 		player.draw(d);
+		d.drawStringRight("TIME "+time, Main.FW-10,25);
 	}
 }

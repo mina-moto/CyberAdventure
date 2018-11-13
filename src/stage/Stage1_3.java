@@ -1,15 +1,12 @@
 package stage;
 
-import java.awt.Color;
-
-import main.Main;
 import sound.AllSound;
 import backGround.Night;
 import densan.s.game.drawing.Drawer;
 import densan.s.game.sound.SoundManager;
 
 /**
- * サンプルステージ2
+ * サンプルステージ3
  * @author k.minamoto
  */
 public class Stage1_3 extends Stage{
@@ -42,7 +39,5 @@ public class Stage1_3 extends Stage{
 			rightEnd=6500;
 		}
 		d.setFontSize(20);
-		d.setColor(Color.WHITE);
-		d.drawStringRight("TIME "+time, Main.FW-10,25);
 	}
 }

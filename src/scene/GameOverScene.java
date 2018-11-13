@@ -22,8 +22,8 @@ public class GameOverScene implements Scene {
 	public void draw(Drawer d) {
 		d.setColor(Color.BLACK);//文字色設定
 		d.setFontSize(30);//文字サイズ設定
-		d.drawString("ゲームオーバー", 30, 30);//(座標(30,30)にテキスト表示)
-		d.drawString("zキーで戻る", 30, 330);
+		d.drawString("GAME OVER", 30, 30);//(座標(30,30)にテキスト表示)
+		d.drawString("Z:Back", 30, 330);
 	}
 	/* (非 Javadoc)
 	 * @see scene.Scene#setUp()
@@ -31,6 +31,6 @@ public class GameOverScene implements Scene {
 	@Override
 	public void setUp() {
 		// TODO 自動生成されたメソッド・スタブ
-		
+
 	}
 }

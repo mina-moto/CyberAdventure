@@ -31,9 +31,9 @@ public class BearEnemy extends Enemy{
 	 */
 	public BearEnemy(int x,int y) {
 		super(x,y, "image/enemy/bear/walk/Walk_Bear4.png");
-		moveSpeed=0.5;
+		moveSpeed=1;
 		jumpSpeed=2;
-		this.MAX_HP=3000;
+		this.MAX_HP=1000;
 	}
 	
 	@Override
@@ -64,7 +64,7 @@ public class BearEnemy extends Enemy{
 	public void attack() {
 		attackCount++;
 		if(attackCount<28){
-			moveSpeed=1;
+			moveSpeed=2;
 			if ((attackCount % 7 == 1))
 				switchImage(attackImages);
 		}
@@ -77,7 +77,7 @@ public class BearEnemy extends Enemy{
 						, super.getObjectHeight());
 				power=5;
 				attackCount=0;
-				moveSpeed=0.5;
+				moveSpeed=1;
 				isAttack=false;
 			}
 		}
@@ -106,7 +106,7 @@ public class BearEnemy extends Enemy{
 			}
 			move(dir);
 		}
-		if (Math.abs(getCenterX()-player.getCenterX())<80){
+		if (Math.abs(getCenterX()-player.getCenterX())<180){
 			isAttack=true;
 		}
 		if (isAttack) {

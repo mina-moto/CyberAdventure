@@ -28,7 +28,7 @@ public abstract class Player extends Chara{
 	 * WALK_SPEED:歩行速度<br>
 	 * RUN_SPEED:走行速度
 	 */
-	protected final double WALK_SPEED=13,RUN_SPEED=14.5;
+	protected final double WALK_SPEED=4,RUN_SPEED=6;
 	/**
 	 * flash:プレイヤーがダメージを受けて点滅している状態かどうか<br>
 	 * invincibly:プレイヤーが無敵かどうか<br>
@@ -60,7 +60,7 @@ public abstract class Player extends Chara{
 		super(x,y,image);
 		nomalAttack=new PlayerAtttack(x, y);
 		jumpSpeed=3;//ジャンプ力設定
-		MAX_HP=100;
+		MAX_HP=50;
 	}
 	/**
 	 * プレイヤーの画像リストの設定

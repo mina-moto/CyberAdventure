@@ -26,10 +26,10 @@ public class GameClearScene implements Scene {
 	public void update() {
 		if(num<score){
 			num+=99;
-			if (KeyInput.isPress(KeyEvent.VK_Z)||(num>score)) {
+			if (KeyInput.isPress(KeyEvent.VK_X)||(num>score)) {
 				num=score;
 			}
-		}else if (KeyInput.isPress(KeyEvent.VK_Z)) {//Zが押された時に現在のシーンをselectにする(ステージ選択画面へ遷移)
+		}else if (KeyInput.isPress(KeyEvent.VK_X)) {//Xが押された時に現在のシーンをselectにする(ステージ選択画面へ遷移)
 			Main.changeScene(Main.selectScene);
 		}
 	}
@@ -46,6 +46,6 @@ public class GameClearScene implements Scene {
 		d.fillRect(0,Main.FH-30, Main.FW, 30);
 		d.setColor(Color.CYAN);
 		d.setFontSize(20);
-		d.drawStringCenter("Zで戻る", Main.FW/2, Main.FH-17);
+		d.drawStringCenter("X:Back", Main.FW/2, Main.FH-17);
 	}
 }

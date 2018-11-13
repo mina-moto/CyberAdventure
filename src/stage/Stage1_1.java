@@ -1,8 +1,4 @@
 package stage;
-
-import java.awt.Color;
-
-import main.Main;
 import sound.AllSound;
 import backGround.Stage1_1Back;
 import densan.s.game.drawing.Drawer;
@@ -34,7 +30,5 @@ public class Stage1_1 extends Stage{
 	public void draw(Drawer d) {
 		super.draw(d);
 		d.setFontSize(20);
-		d.setColor(Color.WHITE);
-		d.drawStringRight("残り時間"+time, Main.FW-10, Main.FH-5);
 	}
 }
