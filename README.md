@@ -1,6 +1,10 @@
 # CyberAdventure
 
 ## Description
+Side Scroll Action Game.  
+Aim at the goal.
+
+## Operating
 Stage  
 ↑:Jump  
 ←→:Move  
@@ -13,7 +17,7 @@ X:Back
 Cursor Key:Choice
 
 ## Demo
-![CyberAdventure](demo/CyberAdventure.gif)
+<img src="demo/CyberAdventure.gif" width="640px">
 
 ## Run
 java -jar CyberAdventure.jar
