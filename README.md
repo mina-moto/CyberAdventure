@@ -4,31 +4,26 @@
 Side Scroll Action Game.  
 Aim at the goal.
 
-## Operating
-Stage  
-↑:Jump  
-←→:Move  
-Z:Attack  
-Space:Pauze  
+## Requirement
+Java8
 
-Other  
-Z:forward  
-X:Back  
-Cursor Key:Choice
+## Operating
+Stage
+- ↑:Jump
+- ←→:Move
+- Z:Attack
+- Space:Pauze
+
+Other
+- Z:Forward
+- X:Back
+- Cursor Key:Choice
 
 ## Demo
 <img src="demo/CyberAdventure.gif" width="640px">
 
 ## Run
-java -jar CyberAdventure.jar
-
-## Requirement
-Java8  
-IDE:Eclipse  
-Library:densan_game_library01_01b  
-Download:https://img.atwikiimg.com/www65.atwiki.jp/kindaidensan/attach/20/41/DensanJavaGameLibrary01_01b.zip  
-Introduction(Japanese Eclipse):https://www65.atwiki.jp/kindaidensan/pages/14.html  
-Introduction(English Eclipse):https://www65.atwiki.jp/kindaidensan/pages/34.html
+java -jar CyberAdventure.jar-
 
 ## License
 This software is released under the MIT License, see LICENSE.
